@@ -1,0 +1,148 @@
+#header {
+	font-family: Impact;
+	color: DeepPink;
+	font-size: 80;
+}
+
+#genres {
+	font-family: Impact;
+	font-size: 40;
+	text-align: center;
+}
+#genres li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+#votes {
+	font-family: Impact;
+	font-size: 40;
+	text-align: center;
+}
+#votes li {
+	display: inline-block;
+	margin: 0px 45px;
+}
+
+#buttons button {
+	display: inline-block;
+	margin-left: 15px;
+	font-family: Impact;
+	font-size: 22;
+}
+#buttons {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+#inputLabel {
+	font-size: 50;
+	color: MistyRose;
+	font-family: Impact;
+	text-align: center;
+}
+#input {
+	width: 87px;
+	height: 60px;
+	font-size: 50;
+	font-family: Impact;
+	margin-left: 15px;
+	background-color: MistyRose;
+	color: Indigo;
+}
+.inputDiv {
+	text-align: center;
+	margin-bottom: 100px;
+}
+#submitInput {
+	color: Indigo;
+	background-color: LightGreen;
+	font-family: Impact;
+	font-size: 30;
+	border: white;
+	margin-left: 15px;
+}
+
+#jazz {
+	color: CornflowerBlue;
+}
+#blues {
+	color: Navy;
+}
+#classical {
+	color: Crimson;
+}
+#pop {
+	color: Violet;
+}
+#funk {
+	color: LightSkyBlue;
+}
+#edm {
+	color: Lime;
+}
+#rock {
+	color: OrangeRed;
+}
+
+#jazzV {
+	color: CornflowerBlue;
+}
+#bluesV {
+	color: Navy;
+}
+#classicalV {
+	color: Crimson;
+}
+#popV {
+	color: Violet;
+}
+#funkV {
+	color: LightSkyBlue;
+}
+#edmV {
+	color: Lime;
+}
+#rockV {
+	color: OrangeRed;
+}
+
+
+#jazzB {
+	color: CornflowerBlue;
+	background-color: Indigo;
+	border: White;
+}
+#bluesB {
+	color: Navy;
+	background-color: DarkOrchid;
+	border: White;
+}
+#classicalB {
+	color: Crimson;
+	background-color: Indigo;
+	border: White;
+}
+#popB {
+	color: Violet;
+	background-color: Indigo;
+	border: White;
+}
+#funkB {
+	color: LightSkyBlue;
+	background-color: Indigo;
+	border: White;
+}
+#edmB {
+	color: Lime;
+	background-color: Indigo;
+	border: White;
+}
+#rockB {
+	color: OrangeRed;
+	background-color: Indigo;
+	border: White;
+}

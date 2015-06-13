@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>uMusic</title>
+  <link href="uMusic.css" rel="stylesheet">
+</head>
+<body onload="intro()" style="background-color:#8B008B">
+<h1 id="header">uMusic</h1>
+
+<div class="inputDiv">
+<label id="inputLabel" for="input">Number of votes to start music:</label>
+<input id="input" type="text" value="10" />
+<button id="submitInput" onclick="setMaxVotes()">Submit</button>
+</div>
+
+
+<ul id="genres">
+<li id="jazz">Jazz</li>
+<li id="blues">Blues</li>
+<li id="classical">Classical</li>
+<li id="funk">Funk</li>
+<li id="pop">Pop</li>
+<li id="edm">EDM</li>
+<li id="rock">Rock</li>
+</ul>
+
+<div id="buttons">
+<button id="jazzB" onclick="voteJazz()">Vote Jazz</button>
+<button id="bluesB" onclick="voteBlues()">Vote Blues</button>
+<button id="classicalB" onclick="voteClassical()">Vote Classical</button>
+<button id="funkB" onclick="voteFunk()">Vote Funk</button>
+<button id="popB" onclick="votePop()">Vote Pop</button>
+<button id="edmB" onclick="voteEDM()">Vote EDM</button>
+<button id="rockB" onclick="voteRock()">Vote Rock</button>
+</div>
+
+<ul id="votes">
+<li id="jazzV">0</li>
+<li id="bluesV">0</li>
+<li id="classicalV">0</li>
+<li id="funkV">0</li>
+<li id="popV">0</li>
+<li id="edmV">0</li>
+<li id="rockV">0</li>
+</ul>
+
+
+</body>
+<script type="text/javascript" src="uMusic.js"></script>
+</html>
