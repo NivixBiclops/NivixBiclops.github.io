@@ -1,0 +1,24 @@
+body {
+  background: rgb(255, 250, 230);
+}
+#button_container {
+  height: 500px;
+  width: 1000px;
+  margin: auto;
+}
+#btn-1 {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  background-color: turquoise;
+  border: white solid 2px;
+  font-size: 24px;
+  font-family: impact;
+  left: 100px;
+  top: 250px;
+  text-align: center;
+  margin: 20px;
+}
+#btn-1:hover {
+  text-shadow: 1px 1px 1px red;
+}

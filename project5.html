@@ -1,0 +1,51 @@
+<html>
+<body bgcolor="#3B3B19", text="white">
+<h1>INSULT GENERATOR</h1>
+<button type = "button" onclick="" id="insult_button">Generate!</button>
+<script type="text/javascript">
+var btn = document.getElementById("insult_button");
+
+var ran;
+var insult;
+var ran2;
+var insult2;
+
+function generate(ran, ran2, insult, insult2) {
+    ran = Math.floor(Math.random()*9);
+	if (ran==0) {insult = "moronic"}
+	else if (ran==1) {insult = "idiotic "}
+	else if (ran==2) {insult = "asinine "}
+	else if (ran==3) {insult = "repulsive "}
+	else if (ran==4) {insult = "moronic "}
+	else if (ran==5) {insult = "idiosyncratic "}
+	else if (ran==6) {insult = "abominable "}
+	else if (ran==7) {insult = "incompetent "}
+	else {insult = "dopey "}
+
+	ran2 = Math.floor(Math.random()*9);
+	if (ran2==0) {var insult2 = "donkey"}
+	else if (ran2==1) {insult2 = "dolt!"}
+	else if (ran2==2) {insult2 = "ninconpoop!"}
+	else if (ran2==3) {insult2 = "imbecile!"}
+	else if (ran2==4) {insult2 = "pile of excrement!"}
+	else if (ran2==5) {insult2 = "twit!"}
+	else if (ran2==6) {insult2 = "simpleton!"}
+	else if (ran2==7) {insult2 = "cretin!"}
+	else {insult2 = "nitwit!"}
+		return [insult, insult2]
+}
+
+btn.addEventListener("click",function(){
+	var var1;
+	var1=confirm("I will now insult you.");
+	if (var1) {
+		var temp = generate(ran, ran2, insult, insult2);
+	alert("You "+temp[0]+temp[1])}
+
+	else {var temp = generate(ran, ran2, insult, insult2);
+	alert("Too bad, you "+temp[0]+temp[1])}
+
+});
+</script>
+</body>
+</html>

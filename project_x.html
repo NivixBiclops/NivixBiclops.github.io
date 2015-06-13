@@ -1,0 +1,500 @@
+<html>
+<body bgcolor = "black" text="00FF00">
+<h1>Default Code</h1>
+<h2>Encode</h2>
+<textarea id = "input"></textarea>
+<button id="convert" onclick ="converttxt()">encode</button>
+<div id="output"></div>
+<h2>Decode</h2>
+<textarea id = "input2"></textarea>
+<button id="convert2" onclick ="converttxt2()">decode</button>
+<div id="output2"></div>
+
+<div class="encode-section" style="margin-top:100px">
+<input id="inputa" type="text" style="width:20px; height:20px"/>A
+<input id="inputb" type="text" style="width:20px; height:20px"/>B
+<input id="inputc" type="text" style="width:20px; height:20px"/>C
+<input id="inputd" type="text" style="width:20px; height:20px"/>D
+<input id="inpute" type="text" style="width:20px; height:20px"/>E
+<input id="inputf" type="text" style="width:20px; height:20px"/>F
+<input id="inputg" type="text" style="width:20px; height:20px"/>G
+<input id="inputh" type="text" style="width:20px; height:20px"/>H
+<input id="inputi" type="text" style="width:20px; height:20px"/>I
+<input id="inputj" type="text" style="width:20px; height:20px"/>J
+<input id="inputk" type="text" style="width:20px; height:20px"/>K
+<input id="inputl" type="text" style="width:20px; height:20px"/>L
+<input id="inputm" type="text" style="width:20px; height:20px"/>M
+<input id="inputn" type="text" style="width:20px; height:20px"/>N
+<input id="inputo" type="text" style="width:20px; height:20px"/>O
+<input id="inputp" type="text" style="width:20px; height:20px"/>P
+<input id="inputq" type="text" style="width:20px; height:20px"/>Q
+<input id="inputr" type="text" style="width:20px; height:20px"/>R
+<input id="inputs" type="text" style="width:20px; height:20px"/>S
+<input id="inputt" type="text" style="width:20px; height:20px"/>T
+<input id="inputu" type="text" style="width:20px; height:20px"/>U
+<input id="inputv" type="text" style="width:20px; height:20px"/>V
+<input id="inputw" type="text" style="width:20px; height:20px"/>W
+<input id="inputx" type="text" style="width:20px; height:20px"/>X
+<input id="inputy" type="text" style="width:20px; height:20px"/>Y
+<input id="inputz" type="text" style="width:20px; height:20px"/>Z
+</div>
+<button id="setcode" onclick ="setcode()" style="margin-top:20px">set code</button>
+
+<h1 style="margin-top:30px">Set Code</h1>
+<h2>Encode</h2>
+<textarea id = "input_1"></textarea>
+<button id="convert_1" onclick ="converttxt_1()">encode</button>
+<div id="output_1"></div>
+<h2>Decode</h2>
+<textarea id = "input_2"></textarea>
+<button id="convert_2" onclick ="converttxt_2()">decode</button>
+<div id="output_2"></div>
+<SCRIPT TYPE="text/javascript">
+var q, w, e, r, t, y, u, i, o, p, a, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m;
+var converttxt = function() {
+	var normaltxt = document.getElementById("input").value;
+	var convertedtxt = ""
+	for (var i = 0; i< normaltxt.length; i++) {
+		switch(normaltxt[i]) {
+			case"a":
+			case"A":
+				convertedtxt += "["
+				break;
+			case"b":
+			case"B":
+				convertedtxt += "!"
+				break;
+			case"c":
+			case"C":
+				convertedtxt += ">"
+				break;
+			case"d":
+			case"D":
+				convertedtxt += "2"
+				break;
+			case"e":
+			case"E":
+				convertedtxt += "<"
+				break;
+			case"f":
+			case"F":
+				convertedtxt += "'"
+				break;
+			case"g":
+			case"G":
+				convertedtxt += "|"
+				break;
+			case"h":
+			case"H":
+				convertedtxt += "@"
+				break;
+			case"i":
+			case"I":
+				convertedtxt += "&"
+				break;
+			case"j":
+			case"J":
+				convertedtxt += ")"
+				break;
+			case"k":
+			case"K":
+				convertedtxt += "5"
+				break;
+			case"l":
+			case"L":
+				convertedtxt += "$"
+				break;
+			case"m":
+			case"M":
+				convertedtxt += "?"
+				break;
+			case"n":
+			case"N":
+				convertedtxt += "9"
+				break;
+			case"o":
+			case"O":
+				convertedtxt += "#"
+				break;
+			case"p":
+			case"P":
+				convertedtxt += "+"
+				break;
+			case"q":
+			case"Q":
+				convertedtxt += "("
+				break;
+			case"r":
+			case"R":
+				convertedtxt += "*"
+				break;
+			case"s":
+			case"S":
+				convertedtxt += "3"
+				break;
+			case"t":
+			case"T":
+				convertedtxt += "4"
+				break;
+			case"u":
+			case"U":
+				convertedtxt += ";"
+				break;
+			case"v":
+			case"V":
+				convertedtxt += "."
+				break;
+			case"w":
+			case"W":
+				convertedtxt += "7"
+				break;
+			case"x":
+			case"X":
+				convertedtxt += ":"
+				break;
+			case"y":
+			case"Y":
+				convertedtxt += "0"
+				break;
+			case"z":
+			case"Z":
+				convertedtxt += "{"
+				break;
+			default:
+				convertedtxt += "_"
+		}
+	
+	}
+	document.getElementById("output").innerHTML = convertedtxt;
+}
+var converttxt2 = function() {
+	var normaltxt2 = document.getElementById("input2").value;
+	var convertedtxt2 = ""
+	for (var i = 0; i< normaltxt2.length; i++) {
+		switch(normaltxt2[i]) {
+			case"[":
+				convertedtxt2 += "A"
+				break;
+			case"!":
+				convertedtxt2 += "B"
+				break;
+			case">":
+				convertedtxt2 += "C"
+				break;
+			case"2":
+				convertedtxt2 += "D"
+				break;
+			case"<":
+				convertedtxt2 += "E"
+				break;
+			case"'":
+				convertedtxt2 += "F"
+				break;
+			case"|":
+				convertedtxt2 += "G"
+				break;
+			case"@":
+				convertedtxt2 += "H"
+				break;
+			case"&":
+				convertedtxt2 += "I"
+				break;
+			case")":
+				convertedtxt2 += "J"
+				break;
+			case"5":
+				convertedtxt2 += "K"
+				break;
+			case"$":
+				convertedtxt2 += "L"
+				break;
+			case"?":
+				convertedtxt2 += "M"
+				break;
+			case"9":
+				convertedtxt2 += "N"
+				break;
+			case"#":
+				convertedtxt2 += "O"
+				break;
+			case"+":
+				convertedtxt2 += "P"
+				break;
+			case"(":
+				convertedtxt2 += "Q"
+				break;
+			case"*":
+				convertedtxt2 += "R"
+				break;
+			case"3":
+				convertedtxt2 += "S"
+				break;
+			case"4":
+				convertedtxt2 += "T"
+				break;
+			case";":
+				convertedtxt2 += "U"
+				break;
+			case".":
+				convertedtxt2 += "V"
+				break;
+			case"7":
+				convertedtxt2 += "W"
+				break;
+			case":":
+				convertedtxt2 += "X"
+				break;
+			case"0":
+				convertedtxt2 += "Y"
+				break;
+			case"{":
+				convertedtxt2 += "Z"
+				break;
+			default:
+				convertedtxt2 += "_"
+		}
+	}
+	document.getElementById("output2").innerHTML = convertedtxt2;
+}
+
+var setcode = function() {
+	a = document.getElementById("inputa").value;
+	b = document.getElementById("inputb").value;
+	c = document.getElementById("inputc").value;
+	d = document.getElementById("inputd").value;
+	e = document.getElementById("inpute").value;
+	f = document.getElementById("inputf").value;
+	g = document.getElementById("inputg").value;
+	h = document.getElementById("inputh").value;
+	i = document.getElementById("inputi").value;
+	j = document.getElementById("inputj").value;
+	k = document.getElementById("inputk").value;
+	l = document.getElementById("inputl").value;
+	m = document.getElementById("inputm").value;
+	n = document.getElementById("inputn").value;
+	o = document.getElementById("inputo").value;
+	p = document.getElementById("inputp").value;
+	q = document.getElementById("inputq").value;
+	r = document.getElementById("inputr").value;
+	s = document.getElementById("inputs").value;
+	t = document.getElementById("inputt").value;
+	u = document.getElementById("inputu").value;
+	v = document.getElementById("inputv").value;
+	w = document.getElementById("inputw").value;
+	x = document.getElementById("inputx").value;
+	y = document.getElementById("inputy").value;
+	z = document.getElementById("inputz").value;
+}
+
+var converttxt_1 = function() {
+	console.log(a);
+	var normaltxt_1 = document.getElementById("input_1").value;
+	var convertedtxt_1 = "";
+	for (var i = 0; i< normaltxt_1.length; i++) {
+		switch(normaltxt_1[i]) {
+		case"a":
+		case"A":
+			convertedtxt_1 += a
+			break;
+		case"b":
+		case"B":
+			convertedtxt_1 += b
+			break;
+		case"c":
+		case"C":
+			convertedtxt_1 += c
+			break;
+		case"d":
+		case"D":
+			convertedtxt_1 += d
+			break;
+		case"e":
+		case"E":
+			convertedtxt_1 += e
+			break;
+		case"f":
+		case"F":
+			convertedtxt_1 += f
+			break;
+		case"g":
+		case"G":
+			convertedtxt_1 += g
+			break;
+		case"h":
+		case"H":
+			convertedtxt_1 += h
+			break;
+		case"i":
+		case"I":
+			convertedtxt_1 += i
+			break;
+		case"j":
+		case"J":
+			convertedtxt_1 += j
+			break;
+		case"k":
+		case"K":
+			convertedtxt_1 += k
+			break;
+		case"l":
+		case"L":
+			convertedtxt_1 += l
+			break;
+		case"m":
+		case"M":
+			convertedtxt_1 += m
+			break;
+		case"n":
+		case"N":
+			convertedtxt_1 += n
+			break;
+		case"o":
+		case"O":
+			convertedtxt_1 += o
+			break;
+		case"p":
+		case"P":
+			convertedtxt_1 += p
+			break;
+		case"q":
+		case"Q":
+			convertedtxt_1 += q
+			break;
+		case"r":
+		case"R":
+			convertedtxt_1 += r
+			break;
+		case"s":
+		case"S":
+			convertedtxt_1 += s
+			break;
+		case"t":
+		case"T":
+			convertedtxt_1 += t
+			break;
+		case"u":
+		case"U":
+			convertedtxt_1 += u
+			break;
+		case"v":
+		case"V":
+			convertedtxt_1 += v
+			break;
+		case"w":
+		case"W":
+			convertedtxt_1 += w
+			break;
+		case"x":
+		case"X":
+			convertedtxt_1 += x
+			break;
+		case"y":
+		case"Y":
+			convertedtxt_1 += y
+			break;
+		case"z":
+		case"Z":
+			convertedtxt_1 += z
+			break;
+		default:
+			convertedtxt_1 += "_"
+		}
+	}
+	document.getElementById("output_1").innerHTML = convertedtxt_1;
+}
+
+var converttxt_2 = function() {
+	console.log(a);
+	var normaltxt_2 = document.getElementById("input_2").value;
+	var convertedtxt_2 = "";
+	for (var i = 0; i< normaltxt_2.length; i++) {
+		switch(normaltxt_2[i]) {
+		case a:
+			convertedtxt_2 += "A"
+			break;
+		case b:
+			convertedtxt_2 += "B"
+			break;
+		case c:
+			convertedtxt_2 += "C"
+			break;
+		case d:
+			convertedtxt_2 += "D"
+			break;
+		case e:
+			convertedtxt_2 += "E"
+			break;
+		case f:
+			convertedtxt_2 += "F"
+			break;
+		case g:
+			convertedtxt_2 += "G"
+			break;
+		case h:
+			convertedtxt_2 += "H"
+			break;
+		case i:
+			convertedtxt_2 += "I"
+			break;
+		case j:
+			convertedtxt_2 += "J"
+			break;
+		case k:
+			convertedtxt_2 += "K"
+			break;
+		case l:
+			convertedtxt_2 += "L"
+			break;
+		case m:
+			convertedtxt_2 += "M"
+			break;
+		case n:
+			convertedtxt_2 += "N"
+			break;
+		case o:
+			convertedtxt_2 += "O"
+			break;
+		case p:
+			convertedtxt_2 += "P"
+			break;
+		case q:
+			convertedtxt_2 += "Q"
+			break;
+		case r:
+			convertedtxt_2 += "R"
+			break;
+		case s:
+			convertedtxt_2 += "S"
+			break;
+		case t:
+			convertedtxt_2 += "T"
+			break;
+		case u:
+			convertedtxt_2 += "U"
+			break;
+		case v:
+			convertedtxt_2 += "V"
+			break;
+		case w:
+			convertedtxt_2 += "W"
+			break;
+		case x:
+			convertedtxt_2 += "X"
+			break;
+		case y:
+			convertedtxt_2 += "Y"
+			break;
+		case z:
+			convertedtxt_2 += "Z"
+			break;
+		default:
+			convertedtxt_2 += "_"
+		}
+	}
+	document.getElementById("output_2").innerHTML = convertedtxt_2;
+}
+
+</SCRIPT>
+</body>
+</html>
+

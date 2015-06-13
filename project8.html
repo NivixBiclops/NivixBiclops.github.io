@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cute Einstein</title>
+  </head>
+  <body bgcolor="#FFFFFF" text="000000" style="font-family:Comic Sans MS">
+    <h1>Get to work, Dr Einstein!</h1>
+    <a href="index.html">Back to home page</a>
+    <hr>
+    <h2>Get Einstein to do some tasks!</p>
+    <div id="container">
+      <div class="stats" align="center">
+        <label id="intelligence-label" style="display:inline-block">Intelligence:</label>
+        <label id="intelligence-points" style="display:inline-block">20</label>
+        <label id="health-label" style="display:inline-block">  Health:</label>
+        <label id="health-points" style="display:inline-block">20</label>
+        <label id="happiness-label" style="display:inline-block">  Happiness:</label>
+        <label id="happiness-points" style="display:inline-block">20</label>
+      </div>
+      <div class="picture" align="center">
+        <img id="person" src="https://bgsctechclub.files.wordpress.com/2013/05/einstein-cartoon-right-looking.jpg?w=350">
+      </div>
+        <div class="actions" align="center">
+    <button id="solve-action" onclick="change('intelligence')">Solve a physics problem</button>
+    <button id="run-action" onclick="change('health')">Stand on your head</button>
+    <button id="idea-action" onclick="change('happiness')">Eat a burger</button>
+      </div>
+    </div>
+    <script>
+      // Creating a new object:
+      var person = new Object();
+      // Setting object property values:
+      person.intelligence = parseInt(document.getElementById("intelligence-points").innerHTML);
+      person.health = parseInt(document.getElementById("health-points").innerHTML);
+      person.happiness = parseInt(document.getElementById("happiness-points").innerHTML);
+      
+      var change = function(property) {
+        switch(property) {
+          case "intelligence":
+            person.intelligence *= 2;
+            document.getElementById("intelligence-points").innerHTML = person.intelligence;
+            break;
+          case "health":
+            person.health += 10;
+            document.getElementById("health-points").innerHTML = person.health;
+            break;
+          default:
+            person.happiness += 10;
+            person.health -= 10;
+            document.getElementById("happiness-points").innerHTML = person.happiness;
+            document.getElementById("health-points").innerHTML = person.health;
+    }
+}
+    </script>
+  </body>

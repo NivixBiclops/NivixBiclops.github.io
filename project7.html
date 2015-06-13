@@ -1,0 +1,51 @@
+<html>
+<body bgcolor = "#CCFF33">
+<h1>G33K SP34K</h1>
+<h3>Insert regular text below</h3>
+</body>
+<textarea id = "input"></textarea>
+<button id="convert" onclick ="converttxt()">convert</button>
+<div id="output"></div>
+<SCRIPT TYPE="text/javascript">
+
+var converttxt = function() {
+	var normaltxt = document.getElementById("input").value;
+	var convertedtxt = ""
+	for (var i = 0; i< normaltxt.length; i++) {
+		switch(normaltxt[i]) {
+			case"A":
+				convertedtxt += "4"
+				break;
+			case"a":
+				convertedtxt += "@"
+				break;
+			case"o":
+			case"O":
+				convertedtxt += "0"
+				break;
+			case"e":
+			case"E":
+				convertedtxt += "3"
+				break;
+			case"i":
+			case"I":
+				convertedtxt += "1"
+				break;
+			case"s":
+			case"S":
+				convertedtxt += "$"
+				break;
+			case"t":
+				convertedtxt += "+"
+				break;
+			default:
+				convertedtxt+=normaltxt[i]
+		}
+	
+	}
+
+	document.getElementById("output").innerHTML = convertedtxt;
+
+
+}
+</SCRIPT>
